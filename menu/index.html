@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velas aromáticas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Cambria, serif;
+        }
+        nav{
+            background-color: rgb(64, 151, 90);
+            padding: 1em 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        nav li{
+            display: inline-block;
+            margin-right: 1em;
+            font-size: 1em;
+        }
+        nav li a{
+            text-decoration: none;
+            color: #FFF;
+        }
+        nav li a:hover{
+            text-shadow: 2px 2px #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--se aplico z-index ya que es necesario cuando hay varios elementos en posiciones que pueden superponerse, como se uso fixed para el menu es aconsejable darle un valor alto para asegurarnos que nada se posicione por encima-->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
