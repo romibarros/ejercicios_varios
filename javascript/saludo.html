@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida</title>
+</head>
+<body>
+    <script>
+        
+        // Ejercicio punto 1: Declaro las variables e imprimo texto en un alert
+        const nombre = "Romi";
+        const apellido = "Barros";
+        const ciudad = "CABA";
+
+        alert(`Bienvenido, ${nombre} ${apellido} de ${ciudad}!`);
+
+        // Ejercicio punto 2: Solicitar datos personales al usuario
+        const nombre2 = prompt("Ingrese su nombre:");
+        const apellido2 = prompt("Ingrese su apellido:");
+        const ciudad2 = prompt("Ingrese su ciudad:");
+
+        // Mensaje de bienvenida
+        alert(`Bienvenido, ${nombre2} ${apellido2} de ${ciudad2}!`);
+        
+        // Ejercicio 3 : Solicitar la fecha de nacimiento y calcular días vividos
+        const fechaNacimiento = prompt("Ingrese su fecha de nacimiento (YYYY-MM-DD):");
+        const fechaNacimientoObj = new Date(fechaNacimiento);
+        const hoy = new Date();
+
+        // Calcular la diferencia en días
+        const diferenciaMs = hoy - fechaNacimientoObj;
+        const diasVividos = Math.floor(diferenciaMs / (1000 * 60 * 60 * 24));
+
+        // Mostrar mensaje con los días vividos
+        alert(`Has vivido aproximadamente ${diasVividos} días.`);
+    </script>
+</body>
+</html>
