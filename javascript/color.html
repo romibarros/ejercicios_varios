@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chevrolet Chevy Care</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo adicional para modo claro */
+        .light-mode {
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .dark-mode {
+            background-color: #343a40;
+            color: #ffffff;
+            td{
+                color: #FFF
+            }
+        }
+        .custom-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body class="light-mode">
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Chevrolet Chevy Care</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <button id="light-mode-btn" class="btn btn-primary mx-1">Modo Claro</button>
+                </li>
+                <li class="nav-item">
+                    <button id="dark-mode-btn" class="btn btn-dark mx-1">Modo Oscuro</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container my-5">
+        <!-- Título -->
+        <h1 class="text-center">Bienvenido a Chevrolet Chevy Care</h1>
+
+        <!-- Imagen -->
+        <img src="https://fotos.perfil.com/2022/12/19/trim/876/492/chevy-serie-2-1475673.jpg?webp" alt="Chevrolet Chevy" class="custom-image my-4">
+
+        <!-- Tabla -->
+        <table class="table table-bordered table-hover">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Servicio</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mantenimiento Básico</td>
+                    <td>Incluye cambio de aceite y revisión de frenos</td>
+                    <td>$50.000</td>
+                </tr>
+                <tr>
+                    <td>Mantenimiento Avanzado</td>
+                    <td>Incluye alineación, balanceo y revisión completa</td>
+                    <td>$100.000</td>
+                </tr>
+                <tr>
+                    <td>Restauración</td>
+                    <td>Restauración completa del vehículo a su estado original</td>
+                    <td>A revisar según estado del auto</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para cambiar de modo -->
+    <script>
+        $(document).ready(function () {
+            $('#light-mode-btn').click(function () {
+                $('body').removeClass('dark-mode').addClass('light-mode');
+            });
+
+            $('#dark-mode-btn').click(function () {
+                $('body').removeClass('light-mode').addClass('dark-mode');
+            });
+        });
+    </script>
+</body>
+</html>
