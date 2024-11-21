@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+body.claro {
+    --color-primario: #4caf50;
+    --color-secundario: #8bc34a;
+    --color-texto: #fff;
+    --color-fondo: #f9f9f9;
+    --color-borde: #ddd;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+body.oscuro {
+    --color-primario: #333;
+    --color-secundario: #555;
+    --color-texto: #fff;
+    --color-fondo: #444;
+    --color-borde: #666;
+    background-color: #222222;
+    color: #dddddd;
+}
+  
+    
+header {
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    padding: 1em;
+}
+  
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+header .menu a.logo {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+header .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+header .menu ul li {
+    display: inline;
+}
+
+header .menu .btn-estilo {
+    background-color: var(--color-secundario);
+    border: none;
+    color: var(--color-texto);
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+header .menu .btn-estilo:hover {
+    background-color: var(--color-texto);
+    color: var(--color-secundario);
+}
+
+.bienvenida {
+    text-align: center;
+    padding: 2em;
+}
+
+.registro {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: var(--color-fondo);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.registro h2 {
+    text-align: center;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid var(--color-borde);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    box-shadow: 0 0 10px var(--color-secundario); 
+    border-color: var(--color-secundario);
+}
+
+.campo input:valid {
+    border-color: green;
+}
+
+.campo input:invalid {
+    border-color: red; 
+}
+
+.campo input:disabled {
+    background-color: #e9e9e9;
+    border-color: #ccc;
+    cursor: not-allowed; 
+}
+
+.campo textarea::placeholder {
+    font-style: italic; 
+    color: #888;
+}
+
+.campo label:first-letter {
+    font-size: 1.2em;
+    color: var(--color-secundario);
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 0.75em;
+    font-size: 1.2em;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-enviar:hover {
+    background-color: var(--color-secundario);
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+}
+
+footer p::first-line {
+    font-weight: bold; 
+}
+
