@@ -1,11 +1,13 @@
 .imperio {
     background-color: red;
     color: white;
+    padding: 5px;
 }
-
+  
 .rebeldes {
     background-color: blue;
     color: white;
+    padding: 5px;
 }
 
 #darth-vader {
@@ -13,15 +15,22 @@
 }
 
 #luke {
-    font-style: italic; 
+    font-style: italic;
 }
 
-.soldados {
-    border: 2px dashed black; 
-    letter-spacing: 2px; 
+.soldado {
+    border: 2px dashed white;
+    padding: 5px;
 }
 
-.unidades {
+.soldado-letras {
+    letter-spacing: 2px;
+}
+
+.apoyo {
     text-align: center;
+}
+
+.nave {
     text-transform: uppercase;
 }
