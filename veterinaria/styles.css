@@ -4,8 +4,8 @@ body {
     line-height: 1.6;
 }
 body.claro {
-    --color-primario: #4caf50;
-    --color-secundario: #8bc34a;
+    --color-primario: #a543df;
+    --color-secundario: #c6a3ee;
     --color-texto: #fff;
     --color-fondo: #f9f9f9;
     --color-borde: #ddd;
